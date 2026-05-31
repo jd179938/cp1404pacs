@@ -11,6 +11,8 @@ def main():
         print("Invalid score!")
         score = float(input("Enter score: "))
     print(f"User score {score} is {determine_result(score)}")
+    if score >= 90:
+        print("You get a prize!")
     random_score = randint(1,100)
     print(f"Random: {random_score} = {determine_result(random_score)}")
 
